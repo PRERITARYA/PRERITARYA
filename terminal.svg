@@ -99,9 +99,9 @@
     Expert<animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.41;0.44;1" dur="6s" fill="freeze"/>
   </text>
 
-  <!-- C++ bar -->
+  <!-- C bar -->
   <text x="24" y="292" font-family="'Courier New', monospace" font-size="12" fill="#f0d49a">
-    C++     <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.44;0.47;1" dur="6s" fill="freeze"/>
+    C   <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.44;0.47;1" dur="6s" fill="freeze"/>
   </text>
   <rect x="100" y="280" width="0" height="12" rx="2" fill="#c47a1e">
     <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.44;0.47;1" dur="6s" fill="freeze"/>
