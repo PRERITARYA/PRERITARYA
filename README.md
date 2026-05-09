@@ -6,51 +6,7 @@
 
 <div align="center">
 
-<table>
-  <tr>
-    <td align="center" width="220">
-      <br/>
-      🎓
-      <br/><br/>
-      <sub><b>EDUCATION</b></sub>
-      <br/>
-      <b>KIIT University</b>
-      <br/>
-      <sub>B.Tech CSE &nbsp;·&nbsp; 2023–2027</sub>
-      <br/>
-      <sub>CGPA &nbsp;<b>8.77</b></sub>
-      <br/><br/>
-    </td>
-    <td width="30"></td>
-    <td align="center" width="220">
-      <br/>
-      💼
-      <br/><br/>
-      <sub><b>EXPERIENCE</b></sub>
-      <br/>
-      <b>Sopra Steria India</b>
-      <br/>
-      <sub>Software Eng. Intern</sub>
-      <br/>
-      <sub>Noida &nbsp;·&nbsp; 2024</sub>
-      <br/><br/>
-    </td>
-    <td width="30"></td>
-    <td align="center" width="220">
-      <br/>
-      🏅
-      <br/><br/>
-      <sub><b>CERTIFICATIONS</b></sub>
-      <br/>
-      <b>Oracle OCI AI</b>
-      <br/>
-      <sub>Google Cloud Arcade</sub>
-      <br/>
-      <sub>Foundations Certified</sub>
-      <br/><br/>
-    </td>
-  </tr>
-</table>
+<img src="https://raw.githubusercontent.com/PRERITARYA/PRERITARYA/main/cards.svg" alt="Profile Cards" width="100%"/>
 
 </div>
 
