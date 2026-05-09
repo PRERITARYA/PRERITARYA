@@ -6,7 +6,7 @@
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/PRERITARYA/PRERITARYA/main/cards.svg" alt="Profile Cards" width="100%"/>
+<img src="https://cdn.jsdelivr.net/gh/PRERITARYA/PRERITARYA@main/cards.svg" alt="Profile Cards" width="100%"/>
 
 </div>
 
@@ -16,15 +16,9 @@
 
 ### 👤 About Me
 
-```python
-class PreritArya:
-    location   = "Bhubaneswar, India 🇮🇳"
-    university = "KIIT University (2023–2027)"
-    focus      = ["AI/ML", "IoT Systems", "Cloud"]
-    languages  = ["Python", "C++", "SQL", "Java"]
-    currently  = "Building intelligent systems"
-    contact    = "linkedin.com/in/prerit-arya-86a57427a"
-```
+> *"Engineering solutions at the intersection of AI, hardware, and the cloud."*
+
+<img src="https://cdn.jsdelivr.net/gh/PRERITARYA/PRERITARYA@main/terminal.svg" alt="Terminal About Me" width="580"/>
 
 <br clear="right"/>
 
