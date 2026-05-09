@@ -1,0 +1,53 @@
+<svg width="800" height="220" viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Prerit Arya Profile Cards</title>
+  <desc>Education, Experience, and Certifications cards</desc>
+
+  <defs>
+    <linearGradient id="topbar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c47a1e"/>
+      <stop offset="100%" stop-color="#f5c87a"/>
+    </linearGradient>
+    <linearGradient id="cardbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0d00"/>
+      <stop offset="100%" stop-color="#0d0800"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Card 1: Education -->
+  <rect x="10" y="10" width="238" height="200" rx="12" fill="url(#cardbg)" stroke="#3d1f00" stroke-width="1"/>
+  <rect x="10" y="10" width="238" height="5" rx="3" fill="url(#topbar)"/>
+  <!-- icon circle -->
+  <circle cx="129" cy="68" r="26" fill="#120800" stroke="#5c3a0a" stroke-width="1"/>
+  <text x="129" y="77" text-anchor="middle" font-size="22" font-family="serif">🎓</text>
+  <!-- label -->
+  <text x="129" y="116" text-anchor="middle" font-size="10" font-family="Georgia, serif" fill="#7a5c2e" letter-spacing="2">EDUCATION</text>
+  <!-- divider -->
+  <line x1="40" y1="124" x2="218" y2="124" stroke="#3d1f00" stroke-width="0.8"/>
+  <!-- content -->
+  <text x="129" y="148" text-anchor="middle" font-size="15" font-family="Georgia, serif" fill="#f0d49a" font-weight="bold">KIIT University</text>
+  <text x="129" y="168" text-anchor="middle" font-size="11" font-family="Georgia, serif" fill="#c47a1e">B.Tech CSE · 2023–2027</text>
+  <text x="129" y="186" text-anchor="middle" font-size="11" font-family="Georgia, serif" fill="#c47a1e">CGPA 8.77</text>
+
+  <!-- Card 2: Experience -->
+  <rect x="281" y="10" width="238" height="200" rx="12" fill="url(#cardbg)" stroke="#3d1f00" stroke-width="1"/>
+  <rect x="281" y="10" width="238" height="5" rx="3" fill="url(#topbar)"/>
+  <circle cx="400" cy="68" r="26" fill="#120800" stroke="#5c3a0a" stroke-width="1"/>
+  <text x="400" y="77" text-anchor="middle" font-size="22" font-family="serif">💼</text>
+  <text x="400" y="116" text-anchor="middle" font-size="10" font-family="Georgia, serif" fill="#7a5c2e" letter-spacing="2">EXPERIENCE</text>
+  <line x1="311" y1="124" x2="489" y2="124" stroke="#3d1f00" stroke-width="0.8"/>
+  <text x="400" y="148" text-anchor="middle" font-size="15" font-family="Georgia, serif" fill="#f0d49a" font-weight="bold">Sopra Steria India</text>
+  <text x="400" y="168" text-anchor="middle" font-size="11" font-family="Georgia, serif" fill="#c47a1e">Software Eng. Intern</text>
+  <text x="400" y="186" text-anchor="middle" font-size="11" font-family="Georgia, serif" fill="#c47a1e">Noida · 2024</text>
+
+  <!-- Card 3: Certifications -->
+  <rect x="552" y="10" width="238" height="200" rx="12" fill="url(#cardbg)" stroke="#3d1f00" stroke-width="1"/>
+  <rect x="552" y="10" width="238" height="5" rx="3" fill="url(#topbar)"/>
+  <circle cx="671" cy="68" r="26" fill="#120800" stroke="#5c3a0a" stroke-width="1"/>
+  <text x="671" y="77" text-anchor="middle" font-size="22" font-family="serif">🏅</text>
+  <text x="671" y="116" text-anchor="middle" font-size="10" font-family="Georgia, serif" fill="#7a5c2e" letter-spacing="2">CERTIFICATIONS</text>
+  <line x1="582" y1="124" x2="760" y2="124" stroke="#3d1f00" stroke-width="0.8"/>
+  <text x="671" y="148" text-anchor="middle" font-size="15" font-family="Georgia, serif" fill="#f0d49a" font-weight="bold">Oracle OCI AI</text>
+  <text x="671" y="168" text-anchor="middle" font-size="11" font-family="Georgia, serif" fill="#c47a1e">Google Cloud Arcade</text>
+  <text x="671" y="186" text-anchor="middle" font-size="11" font-family="Georgia, serif" fill="#c47a1e">Foundations Certified</text>
+
+</svg>
