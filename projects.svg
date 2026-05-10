@@ -1,4 +1,4 @@
-<svg width="820" height="440" viewBox="0 0 820 440" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg width="820" height="450" viewBox="0 0 820 450" xmlns="http://www.w3.org/2000/svg" role="img">
   <title>Prerit Arya Featured Projects</title>
   <defs>
     <linearGradient id="topgrad" x1="0" y1="0" x2="1" y2="0">
@@ -27,156 +27,117 @@
     </filter>
   </defs>
 
-  <!-- Float + fade in wrapper -->
-  <g>
-    <animateTransform attributeName="transform" attributeType="XML" type="translate"
-      values="0,0; 0,-5; 0,0" dur="5s" repeatCount="indefinite"
-      calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"/>
-    <animate attributeName="opacity" values="0;1" dur="0.6s" fill="freeze"/>
+  <!-- Root level float + fade -->
+  <animateTransform attributeName="transform" attributeType="XML" type="translate"
+    values="0,0; 0,-5; 0,0" dur="5s" repeatCount="indefinite"
+    calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"/>
+  <animate attributeName="opacity" values="0;1" dur="0.6s" fill="freeze"/>
 
-    <!-- Outer glow halo -->
-    <rect x="8" y="8" width="804" height="424" rx="14" fill="#c47a1e" opacity="0.07" filter="url(#outerGlow)"/>
+  <!-- Outer glow -->
+  <rect x="8" y="8" width="804" height="434" rx="14" fill="#c47a1e" opacity="0.07" filter="url(#outerGlow)"/>
 
-    <!-- Background -->
-    <rect x="8" y="8" width="804" height="424" rx="14" fill="url(#bggrad)" stroke="#3d1f00" stroke-width="1.2"/>
+  <!-- Background -->
+  <rect x="8" y="8" width="804" height="434" rx="14" fill="url(#bggrad)" stroke="#3d1f00" stroke-width="1.2"/>
+  <rect x="8" y="8" width="804" height="5" rx="3" fill="url(#topgrad)" filter="url(#glow)"/>
+  <rect x="8" y="8" width="3" height="434" rx="2" fill="url(#topgrad)" filter="url(#glow)"/>
+  <rect x="8" y="8" width="804" height="65" rx="14" fill="url(#innerGlow)"/>
 
-    <!-- Top accent -->
-    <rect x="8" y="8" width="804" height="5" rx="3" fill="url(#topgrad)" filter="url(#glow)"/>
+  <!-- Header bar -->
+  <rect x="8" y="13" width="804" height="44" fill="#1c0e00"/>
+  <text x="38" y="41" font-family="'Courier New', monospace" font-size="14" fill="#f5c87a" font-weight="bold">🚀  Featured Projects</text>
+  <text x="760" y="41" font-family="'Courier New', monospace" font-size="11" fill="#5c3a0a">4 repos</text>
 
-    <!-- Left accent -->
-    <rect x="8" y="8" width="3" height="424" rx="2" fill="url(#topgrad)" filter="url(#glow)"/>
+  <!-- Column headers -->
+  <rect x="8" y="57" width="804" height="28" fill="#160a00"/>
+  <text x="38" y="76" font-family="'Courier New', monospace" font-size="11" fill="#7a5c2e" letter-spacing="1.5">PROJECT</text>
+  <text x="300" y="76" font-family="'Courier New', monospace" font-size="11" fill="#7a5c2e" letter-spacing="1.5">DESCRIPTION</text>
+  <text x="646" y="76" font-family="'Courier New', monospace" font-size="11" fill="#7a5c2e" letter-spacing="1.5">STACK</text>
+  <line x1="8" y1="85" x2="812" y2="85" stroke="#3d1f00" stroke-width="0.8"/>
 
-    <!-- Inner top glow -->
-    <rect x="8" y="8" width="804" height="60" rx="14" fill="url(#innerGlow)"/>
+  <!-- Row 1 -->
+  <rect x="9" y="86" width="803" height="82" fill="url(#rowgrad)">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/>
+  </rect>
+  <rect x="9" y="86" width="3" height="82" fill="#c47a1e" filter="url(#glow)">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/>
+  </rect>
+  <text x="38" y="116" font-family="'Courier New', monospace" font-size="13" fill="#f5c87a" font-weight="bold"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/>🚗 Driver Drowsiness IoT</text>
+  <text x="38" y="134" font-family="'Courier New', monospace" font-size="10" fill="#7a5c2e"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/>github.com/PRERITARYA/driver-drowsiness-iot</text>
+  <text x="300" y="111" font-family="Georgia, serif" font-size="12" fill="#d4a855"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/>Real-time drowsiness detection on Raspberry Pi 4</text>
+  <text x="300" y="128" font-family="Georgia, serif" font-size="12" fill="#d4a855"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/>using EAR algorithm with live MJPEG streaming</text>
+  <rect x="646" y="98" width="52" height="18" rx="4" fill="#2a1200" stroke="#5c3a0a" stroke-width="0.8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/></rect>
+  <text x="672" y="111" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#f5c87a"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/>Python</text>
+  <rect x="704" y="98" width="52" height="18" rx="4" fill="#2a1200" stroke="#5c3a0a" stroke-width="0.8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/></rect>
+  <text x="730" y="111" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#f5c87a"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/>OpenCV</text>
+  <rect x="762" y="98" width="36" height="18" rx="4" fill="#2a1200" stroke="#5c3a0a" stroke-width="0.8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/></rect>
+  <text x="780" y="111" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#f5c87a"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/>dlib</text>
+  <rect x="646" y="122" width="38" height="18" rx="4" fill="#2a1200" stroke="#5c3a0a" stroke-width="0.8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/></rect>
+  <text x="665" y="135" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#f5c87a"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/>Flask</text>
+  <rect x="690" y="122" width="34" height="18" rx="4" fill="#2a1200" stroke="#5c3a0a" stroke-width="0.8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/></rect>
+  <text x="707" y="135" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#f5c87a"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/>RPi</text>
+  <line x1="8" y1="168" x2="812" y2="168" stroke="#2a1200" stroke-width="0.8"/>
 
-    <!-- Header bar -->
-    <rect x="8" y="13" width="804" height="44" fill="#1c0e00"/>
-    <text x="38" y="41" font-family="'Courier New', monospace" font-size="14" fill="#f5c87a" font-weight="bold">🚀  Featured Projects</text>
-    <text x="760" y="41" font-family="'Courier New', monospace" font-size="11" fill="#5c3a0a">4 repos</text>
+  <!-- Row 2 -->
+  <rect x="9" y="169" width="803" height="82" fill="#0d0700">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/>
+  </rect>
+  <rect x="9" y="169" width="3" height="82" fill="#f5c87a" filter="url(#glow)">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/>
+  </rect>
+  <text x="38" y="199" font-family="'Courier New', monospace" font-size="13" fill="#f5c87a" font-weight="bold"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/>👁️ Driver Drowsiness Detection</text>
+  <text x="38" y="217" font-family="'Courier New', monospace" font-size="10" fill="#7a5c2e"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/>github.com/PRERITARYA/Driver-Drowsiness-Detection</text>
+  <text x="300" y="194" font-family="Georgia, serif" font-size="12" fill="#d4a855"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/>Laptop-based drowsiness detection using facial</text>
+  <text x="300" y="211" font-family="Georgia, serif" font-size="12" fill="#d4a855"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/>landmark analysis and real-time alert system</text>
+  <rect x="646" y="181" width="52" height="18" rx="4" fill="#2a1200" stroke="#5c3a0a" stroke-width="0.8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/></rect>
+  <text x="672" y="194" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#f5c87a"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/>Python</text>
+  <rect x="704" y="181" width="52" height="18" rx="4" fill="#2a1200" stroke="#5c3a0a" stroke-width="0.8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/></rect>
+  <text x="730" y="194" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#f5c87a"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/>OpenCV</text>
+  <rect x="646" y="205" width="36" height="18" rx="4" fill="#2a1200" stroke="#5c3a0a" stroke-width="0.8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/></rect>
+  <text x="664" y="218" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#f5c87a"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/>dlib</text>
+  <rect x="688" y="205" width="50" height="18" rx="4" fill="#2a1200" stroke="#5c3a0a" stroke-width="0.8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/></rect>
+  <text x="713" y="218" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#f5c87a"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/>pygame</text>
+  <line x1="8" y1="251" x2="812" y2="251" stroke="#2a1200" stroke-width="0.8"/>
 
-    <!-- Column headers -->
-    <rect x="8" y="57" width="804" height="28" fill="#160a00"/>
-    <text x="38" y="76" font-family="'Courier New', monospace" font-size="11" fill="#7a5c2e" letter-spacing="1.5">PROJECT</text>
-    <text x="300" y="76" font-family="'Courier New', monospace" font-size="11" fill="#7a5c2e" letter-spacing="1.5">DESCRIPTION</text>
-    <text x="646" y="76" font-family="'Courier New', monospace" font-size="11" fill="#7a5c2e" letter-spacing="1.5">STACK</text>
-    <line x1="8" y1="85" x2="812" y2="85" stroke="#3d1f00" stroke-width="0.8"/>
+  <!-- Row 3 -->
+  <rect x="9" y="252" width="803" height="82" fill="url(#rowgrad)">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.9s" fill="freeze"/>
+  </rect>
+  <rect x="9" y="252" width="3" height="82" fill="#c47a1e" filter="url(#glow)">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.9s" fill="freeze"/>
+  </rect>
+  <text x="38" y="282" font-family="'Courier New', monospace" font-size="13" fill="#f5c87a" font-weight="bold"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.9s" fill="freeze"/>📰 Smart News Summarizer</text>
+  <text x="38" y="300" font-family="'Courier New', monospace" font-size="10" fill="#7a5c2e"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.9s" fill="freeze"/>github.com/PRERITARYA/smart-news-summarizer</text>
+  <text x="300" y="277" font-family="Georgia, serif" font-size="12" fill="#d4a855"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.9s" fill="freeze"/>NLP-powered news aggregator with sentiment analysis,</text>
+  <text x="300" y="294" font-family="Georgia, serif" font-size="12" fill="#d4a855"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.9s" fill="freeze"/>audio readout and multilingual translation</text>
+  <rect x="646" y="264" width="52" height="18" rx="4" fill="#2a1200" stroke="#5c3a0a" stroke-width="0.8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.9s" fill="freeze"/></rect>
+  <text x="672" y="277" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#f5c87a"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.9s" fill="freeze"/>Python</text>
+  <rect x="704" y="264" width="90" height="18" rx="4" fill="#2a1200" stroke="#5c3a0a" stroke-width="0.8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.9s" fill="freeze"/></rect>
+  <text x="749" y="277" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#f5c87a"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.9s" fill="freeze"/>HuggingFace</text>
+  <rect x="646" y="288" width="58" height="18" rx="4" fill="#2a1200" stroke="#5c3a0a" stroke-width="0.8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.9s" fill="freeze"/></rect>
+  <text x="675" y="301" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#f5c87a"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.9s" fill="freeze"/>Streamlit</text>
+  <rect x="710" y="288" width="52" height="18" rx="4" fill="#2a1200" stroke="#5c3a0a" stroke-width="0.8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.9s" fill="freeze"/></rect>
+  <text x="736" y="301" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#f5c87a"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.9s" fill="freeze"/>Firebase</text>
+  <line x1="8" y1="334" x2="812" y2="334" stroke="#2a1200" stroke-width="0.8"/>
 
-    <!-- Row 1: Driver Drowsiness IoT -->
-    <rect x="9" y="86" width="803" height="82" fill="url(#rowgrad)">
-      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/>
-    </rect>
-    <rect x="9" y="86" width="3" height="82" fill="#c47a1e" filter="url(#glow)">
-      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/>
-    </rect>
-    <text x="38" y="116" font-family="'Courier New', monospace" font-size="13" fill="#f5c87a" font-weight="bold">
-      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/>🚗 Driver Drowsiness IoT
-    </text>
-    <text x="38" y="134" font-family="'Courier New', monospace" font-size="10" fill="#7a5c2e">
-      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/>github.com/PRERITARYA/driver-drowsiness-iot
-    </text>
-    <text x="300" y="111" font-family="Georgia, serif" font-size="12" fill="#d4a855">
-      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/>Real-time drowsiness detection on Raspberry Pi 4
-    </text>
-    <text x="300" y="128" font-family="Georgia, serif" font-size="12" fill="#d4a855">
-      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/>using EAR algorithm with live MJPEG streaming
-    </text>
-    <rect x="646" y="98" width="52" height="18" rx="4" fill="#2a1200" stroke="#5c3a0a" stroke-width="0.8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/></rect>
-    <text x="672" y="111" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#f5c87a"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/>Python</text>
-    <rect x="704" y="98" width="52" height="18" rx="4" fill="#2a1200" stroke="#5c3a0a" stroke-width="0.8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/></rect>
-    <text x="730" y="111" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#f5c87a"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/>OpenCV</text>
-    <rect x="762" y="98" width="36" height="18" rx="4" fill="#2a1200" stroke="#5c3a0a" stroke-width="0.8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/></rect>
-    <text x="780" y="111" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#f5c87a"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/>dlib</text>
-    <rect x="646" y="122" width="38" height="18" rx="4" fill="#2a1200" stroke="#5c3a0a" stroke-width="0.8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/></rect>
-    <text x="665" y="135" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#f5c87a"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/>Flask</text>
-    <rect x="690" y="122" width="34" height="18" rx="4" fill="#2a1200" stroke="#5c3a0a" stroke-width="0.8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/></rect>
-    <text x="707" y="135" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#f5c87a"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/>RPi</text>
-    <line x1="8" y1="168" x2="812" y2="168" stroke="#2a1200" stroke-width="0.8"/>
+  <!-- Row 4 -->
+  <rect x="9" y="335" width="803" height="82" fill="#0d0700">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.2s" fill="freeze"/>
+  </rect>
+  <rect x="9" y="335" width="3" height="82" fill="#f5c87a" filter="url(#glow)">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.2s" fill="freeze"/>
+  </rect>
+  <text x="38" y="365" font-family="'Courier New', monospace" font-size="13" fill="#f5c87a" font-weight="bold"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.2s" fill="freeze"/>🤖 MyLlmDemo</text>
+  <text x="38" y="383" font-family="'Courier New', monospace" font-size="10" fill="#7a5c2e"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.2s" fill="freeze"/>github.com/PRERITARYA/MyLlmDemo</text>
+  <text x="300" y="360" font-family="Georgia, serif" font-size="12" fill="#d4a855"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.2s" fill="freeze"/>Exploration of large language model capabilities</text>
+  <text x="300" y="377" font-family="Georgia, serif" font-size="12" fill="#d4a855"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.2s" fill="freeze"/>and prompt engineering techniques</text>
+  <rect x="646" y="347" width="52" height="18" rx="4" fill="#2a1200" stroke="#5c3a0a" stroke-width="0.8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.2s" fill="freeze"/></rect>
+  <text x="672" y="360" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#f5c87a"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.2s" fill="freeze"/>Python</text>
+  <rect x="704" y="347" width="50" height="18" rx="4" fill="#2a1200" stroke="#5c3a0a" stroke-width="0.8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.2s" fill="freeze"/></rect>
+  <text x="729" y="360" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#f5c87a"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.2s" fill="freeze"/>Jupyter</text>
+  <rect x="760" y="347" width="36" height="18" rx="4" fill="#2a1200" stroke="#5c3a0a" stroke-width="0.8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.2s" fill="freeze"/></rect>
+  <text x="778" y="360" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#f5c87a"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.2s" fill="freeze"/>LLM</text>
 
-    <!-- Row 2: Driver Drowsiness Detection -->
-    <rect x="9" y="169" width="803" height="82" fill="#0d0700">
-      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/>
-    </rect>
-    <rect x="9" y="169" width="3" height="82" fill="#f5c87a" filter="url(#glow)">
-      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/>
-    </rect>
-    <text x="38" y="199" font-family="'Courier New', monospace" font-size="13" fill="#f5c87a" font-weight="bold">
-      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/>👁️ Driver Drowsiness Detection
-    </text>
-    <text x="38" y="217" font-family="'Courier New', monospace" font-size="10" fill="#7a5c2e">
-      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/>github.com/PRERITARYA/Driver-Drowsiness-Detection
-    </text>
-    <text x="300" y="194" font-family="Georgia, serif" font-size="12" fill="#d4a855">
-      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/>Laptop-based drowsiness detection using facial
-    </text>
-    <text x="300" y="211" font-family="Georgia, serif" font-size="12" fill="#d4a855">
-      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/>landmark analysis and real-time alert system
-    </text>
-    <rect x="646" y="181" width="52" height="18" rx="4" fill="#2a1200" stroke="#5c3a0a" stroke-width="0.8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/></rect>
-    <text x="672" y="194" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#f5c87a"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/>Python</text>
-    <rect x="704" y="181" width="52" height="18" rx="4" fill="#2a1200" stroke="#5c3a0a" stroke-width="0.8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/></rect>
-    <text x="730" y="194" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#f5c87a"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/>OpenCV</text>
-    <rect x="646" y="205" width="36" height="18" rx="4" fill="#2a1200" stroke="#5c3a0a" stroke-width="0.8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/></rect>
-    <text x="664" y="218" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#f5c87a"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/>dlib</text>
-    <rect x="688" y="205" width="50" height="18" rx="4" fill="#2a1200" stroke="#5c3a0a" stroke-width="0.8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/></rect>
-    <text x="713" y="218" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#f5c87a"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/>pygame</text>
-    <line x1="8" y1="251" x2="812" y2="251" stroke="#2a1200" stroke-width="0.8"/>
+  <!-- Bottom accent -->
+  <rect x="8" y="437" width="804" height="5" rx="3" fill="url(#topgrad)" filter="url(#glow)"/>
 
-    <!-- Row 3: Smart News Summarizer -->
-    <rect x="9" y="252" width="803" height="82" fill="url(#rowgrad)">
-      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.9s" fill="freeze"/>
-    </rect>
-    <rect x="9" y="252" width="3" height="82" fill="#c47a1e" filter="url(#glow)">
-      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.9s" fill="freeze"/>
-    </rect>
-    <text x="38" y="282" font-family="'Courier New', monospace" font-size="13" fill="#f5c87a" font-weight="bold">
-      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.9s" fill="freeze"/>📰 Smart News Summarizer
-    </text>
-    <text x="38" y="300" font-family="'Courier New', monospace" font-size="10" fill="#7a5c2e">
-      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.9s" fill="freeze"/>github.com/PRERITARYA/smart-news-summarizer
-    </text>
-    <text x="300" y="277" font-family="Georgia, serif" font-size="12" fill="#d4a855">
-      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.9s" fill="freeze"/>NLP-powered news aggregator with sentiment analysis,
-    </text>
-    <text x="300" y="294" font-family="Georgia, serif" font-size="12" fill="#d4a855">
-      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.9s" fill="freeze"/>audio readout and multilingual translation
-    </text>
-    <rect x="646" y="264" width="52" height="18" rx="4" fill="#2a1200" stroke="#5c3a0a" stroke-width="0.8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.9s" fill="freeze"/></rect>
-    <text x="672" y="277" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#f5c87a"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.9s" fill="freeze"/>Python</text>
-    <rect x="704" y="264" width="90" height="18" rx="4" fill="#2a1200" stroke="#5c3a0a" stroke-width="0.8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.9s" fill="freeze"/></rect>
-    <text x="749" y="277" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#f5c87a"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.9s" fill="freeze"/>HuggingFace</text>
-    <rect x="646" y="288" width="58" height="18" rx="4" fill="#2a1200" stroke="#5c3a0a" stroke-width="0.8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.9s" fill="freeze"/></rect>
-    <text x="675" y="301" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#f5c87a"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.9s" fill="freeze"/>Streamlit</text>
-    <rect x="710" y="288" width="52" height="18" rx="4" fill="#2a1200" stroke="#5c3a0a" stroke-width="0.8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.9s" fill="freeze"/></rect>
-    <text x="736" y="301" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#f5c87a"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.9s" fill="freeze"/>Firebase</text>
-    <line x1="8" y1="334" x2="812" y2="334" stroke="#2a1200" stroke-width="0.8"/>
-
-    <!-- Row 4: MyLlmDemo -->
-    <rect x="9" y="335" width="803" height="82" fill="#0d0700">
-      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.2s" fill="freeze"/>
-    </rect>
-    <rect x="9" y="335" width="3" height="82" fill="#f5c87a" filter="url(#glow)">
-      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.2s" fill="freeze"/>
-    </rect>
-    <text x="38" y="365" font-family="'Courier New', monospace" font-size="13" fill="#f5c87a" font-weight="bold">
-      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.2s" fill="freeze"/>🤖 MyLlmDemo
-    </text>
-    <text x="38" y="383" font-family="'Courier New', monospace" font-size="10" fill="#7a5c2e">
-      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.2s" fill="freeze"/>github.com/PRERITARYA/MyLlmDemo
-    </text>
-    <text x="300" y="360" font-family="Georgia, serif" font-size="12" fill="#d4a855">
-      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.2s" fill="freeze"/>Exploration of large language model capabilities
-    </text>
-    <text x="300" y="377" font-family="Georgia, serif" font-size="12" fill="#d4a855">
-      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.2s" fill="freeze"/>and prompt engineering techniques
-    </text>
-    <rect x="646" y="347" width="52" height="18" rx="4" fill="#2a1200" stroke="#5c3a0a" stroke-width="0.8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.2s" fill="freeze"/></rect>
-    <text x="672" y="360" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#f5c87a"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.2s" fill="freeze"/>Python</text>
-    <rect x="704" y="347" width="50" height="18" rx="4" fill="#2a1200" stroke="#5c3a0a" stroke-width="0.8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.2s" fill="freeze"/></rect>
-    <text x="729" y="360" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#f5c87a"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.2s" fill="freeze"/>Jupyter</text>
-    <rect x="760" y="347" width="36" height="18" rx="4" fill="#2a1200" stroke="#5c3a0a" stroke-width="0.8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.2s" fill="freeze"/></rect>
-    <text x="778" y="360" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#f5c87a"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.2s" fill="freeze"/>LLM</text>
-
-    <!-- Bottom accent -->
-    <rect x="8" y="427" width="804" height="5" rx="3" fill="url(#topgrad)" filter="url(#glow)"/>
-  </g>
 </svg>
