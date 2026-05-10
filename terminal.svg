@@ -1,7 +1,5 @@
-<svg width="600" height="420" viewBox="0 0 600 420" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg width="620" height="440" viewBox="0 0 620 440" xmlns="http://www.w3.org/2000/svg" role="img">
   <title>Prerit Arya Terminal</title>
-  <desc>Animated terminal about section</desc>
-
   <defs>
     <linearGradient id="topgrad" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#c47a1e"/>
@@ -11,153 +9,157 @@
       <stop offset="0%" stop-color="#130b00"/>
       <stop offset="100%" stop-color="#0a0600"/>
     </linearGradient>
+    <linearGradient id="innerGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c47a1e" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#c47a1e" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="outerGlow">
+      <feGaussianBlur stdDeviation="7" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
 
-  <!-- Terminal window -->
-  <rect width="600" height="420" rx="14" fill="url(#bggrad)" stroke="#3d1f00" stroke-width="1.2"/>
-  <!-- Top bar -->
-  <rect width="600" height="38" rx="14" fill="#1c0e00"/>
-  <rect y="24" width="600" height="14" fill="#1c0e00"/>
-  <rect width="600" height="5" rx="3" fill="url(#topgrad)"/>
-  <!-- Traffic lights -->
-  <circle cx="22" cy="19" r="6" fill="#3d1f00"/>
-  <circle cx="42" cy="19" r="6" fill="#3d1f00"/>
-  <circle cx="62" cy="19" r="6" fill="#5c3a0a"/>
-  <!-- Title -->
-  <text x="300" y="24" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" fill="#7a5c2e">prerit@github ~ terminal</text>
+  <!-- Float + fade in wrapper -->
+  <g>
+    <animateTransform attributeName="transform" attributeType="XML" type="translate"
+      values="0,0; 0,-5; 0,0" dur="5s" repeatCount="indefinite"
+      calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"/>
+    <animate attributeName="opacity" values="0;1" dur="0.6s" fill="freeze"/>
 
-  <!-- Line 1: whoami command -->
-  <text font-family="'Courier New', monospace" font-size="13" fill="#f5c87a">
-    <tspan x="24" y="72">
-      <tspan fill="#c47a1e">❯ </tspan>whoami
-      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.02;0.04;1" dur="6s" fill="freeze"/>
-    </tspan>
-  </text>
+    <!-- Outer glow halo -->
+    <rect x="8" y="8" width="604" height="424" rx="14" fill="#c47a1e" opacity="0.07" filter="url(#outerGlow)"/>
 
-  <!-- whoami output -->
-  <text font-family="'Courier New', monospace" font-size="13" fill="#f0d49a">
-    <tspan x="24" y="94">
-      Prerit Arya  —  AI · ML · IoT Engineer
-      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.06;0.09;1" dur="6s" fill="freeze"/>
-    </tspan>
-  </text>
-  <text font-family="'Courier New', monospace" font-size="12" fill="#7a5c2e">
-    <tspan x="24" y="112">
-      📍 Bhubaneswar, India  ·  KIIT University 2027
-      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.09;0.12;1" dur="6s" fill="freeze"/>
-    </tspan>
-  </text>
+    <!-- Terminal window -->
+    <rect x="8" y="8" width="604" height="424" rx="14" fill="url(#bggrad)" stroke="#3d1f00" stroke-width="1.2"/>
 
-  <!-- Divider -->
-  <line x1="24" y1="124" x2="576" y2="124" stroke="#3d1f00" stroke-width="0.8">
-    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.12;0.14;1" dur="6s" fill="freeze"/>
-  </line>
+    <!-- Top bar -->
+    <rect x="8" y="8" width="604" height="38" rx="14" fill="#1c0e00"/>
+    <rect x="8" y="32" width="604" height="14" fill="#1c0e00"/>
 
-  <!-- Line 2: cat interests -->
-  <text font-family="'Courier New', monospace" font-size="13" fill="#f5c87a">
-    <tspan x="24" y="144">
-      <tspan fill="#c47a1e">❯ </tspan>cat interests.txt
-      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.14;0.17;1" dur="6s" fill="freeze"/>
-    </tspan>
-  </text>
+    <!-- Top accent with glow -->
+    <rect x="8" y="8" width="604" height="5" rx="3" fill="url(#topgrad)" filter="url(#glow)"/>
 
-  <text font-family="'Courier New', monospace" font-size="12.5" fill="#d4a855">
-    <tspan x="24" y="164"><tspan fill="#c47a1e">◈ </tspan>Computer Vision &amp; Edge AI<animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.18;0.21;1" dur="6s" fill="freeze"/></tspan>
-  </text>
-  <text font-family="'Courier New', monospace" font-size="12.5" fill="#d4a855">
-    <tspan x="24" y="182"><tspan fill="#c47a1e">◈ </tspan>IoT Systems &amp; Embedded Hardware<animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.22;0.25;1" dur="6s" fill="freeze"/></tspan>
-  </text>
-  <text font-family="'Courier New', monospace" font-size="12.5" fill="#d4a855">
-    <tspan x="24" y="200"><tspan fill="#c47a1e">◈ </tspan>Cloud-Native ML Pipelines<animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.26;0.29;1" dur="6s" fill="freeze"/></tspan>
-  </text>
-  <text font-family="'Courier New', monospace" font-size="12.5" fill="#d4a855">
-    <tspan x="24" y="218"><tspan fill="#c47a1e">◈ </tspan>NLP &amp; Intelligent Agents<animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.30;0.33;1" dur="6s" fill="freeze"/></tspan>
-  </text>
+    <!-- Left accent -->
+    <rect x="8" y="8" width="3" height="424" rx="2" fill="url(#topgrad)" filter="url(#glow)"/>
 
-  <!-- Divider -->
-  <line x1="24" y1="230" x2="576" y2="230" stroke="#3d1f00" stroke-width="0.8">
-    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.33;0.35;1" dur="6s" fill="freeze"/>
-  </line>
+    <!-- Inner top glow -->
+    <rect x="8" y="8" width="604" height="80" rx="14" fill="url(#innerGlow)"/>
 
-  <!-- Line 3: skills -->
-  <text font-family="'Courier New', monospace" font-size="13" fill="#f5c87a">
-    <tspan x="24" y="250">
-      <tspan fill="#c47a1e">❯ </tspan>skills --languages
-      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.35;0.38;1" dur="6s" fill="freeze"/>
-    </tspan>
-  </text>
+    <!-- Traffic lights -->
+    <circle cx="30" cy="27" r="6" fill="#3d1f00"/>
+    <circle cx="50" cy="27" r="6" fill="#3d1f00"/>
+    <circle cx="70" cy="27" r="6" fill="#5c3a0a"/>
 
-  <!-- Python bar -->
-  <text x="24" y="272" font-family="'Courier New', monospace" font-size="12" fill="#f0d49a">
-    Python  <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.38;0.41;1" dur="6s" fill="freeze"/>
-  </text>
-  <rect x="100" y="260" width="0" height="12" rx="2" fill="#c47a1e">
-    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.38;0.41;1" dur="6s" fill="freeze"/>
-    <animate attributeName="width" values="0;160" begin="3.6s" dur="0.6s" fill="freeze"/>
-  </rect>
-  <text x="268" y="272" font-family="'Courier New', monospace" font-size="11" fill="#7a5c2e">
-    Expert<animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.41;0.44;1" dur="6s" fill="freeze"/>
-  </text>
+    <!-- Title -->
+    <text x="310" y="32" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" fill="#7a5c2e">prerit@github ~ terminal</text>
 
-  <!-- C bar -->
-  <text x="24" y="292" font-family="'Courier New', monospace" font-size="12" fill="#f0d49a">
-    C   <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.44;0.47;1" dur="6s" fill="freeze"/>
-  </text>
-  <rect x="100" y="280" width="0" height="12" rx="2" fill="#c47a1e">
-    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.44;0.47;1" dur="6s" fill="freeze"/>
-    <animate attributeName="width" values="0;120" begin="4s" dur="0.6s" fill="freeze"/>
-  </rect>
-  <text x="228" y="292" font-family="'Courier New', monospace" font-size="11" fill="#7a5c2e">
-    Proficient<animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.47;0.50;1" dur="6s" fill="freeze"/>
-  </text>
+    <!-- whoami -->
+    <text font-family="'Courier New', monospace" font-size="13" fill="#f5c87a">
+      <tspan x="28" y="76"><tspan fill="#c47a1e">❯ </tspan>whoami
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.02;0.05;1" dur="6s" fill="freeze"/>
+      </tspan>
+    </text>
+    <text font-family="'Courier New', monospace" font-size="13" fill="#f0d49a">
+      <tspan x="28" y="96">Prerit Arya  —  AI · ML · IoT Engineer
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.06;0.10;1" dur="6s" fill="freeze"/>
+      </tspan>
+    </text>
+    <text font-family="'Courier New', monospace" font-size="12" fill="#7a5c2e">
+      <tspan x="28" y="114">📍 Bhubaneswar, India  ·  KIIT University 2027
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.10;0.13;1" dur="6s" fill="freeze"/>
+      </tspan>
+    </text>
 
-  <!-- SQL bar -->
-  <text x="24" y="312" font-family="'Courier New', monospace" font-size="12" fill="#f0d49a">
-    SQL     <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.50;0.53;1" dur="6s" fill="freeze"/>
-  </text>
-  <rect x="100" y="300" width="0" height="12" rx="2" fill="#c47a1e">
-    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.50;0.53;1" dur="6s" fill="freeze"/>
-    <animate attributeName="width" values="0;100" begin="4.4s" dur="0.6s" fill="freeze"/>
-  </rect>
-  <text x="208" y="312" font-family="'Courier New', monospace" font-size="11" fill="#7a5c2e">
-    Proficient<animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.53;0.56;1" dur="6s" fill="freeze"/>
-  </text>
+    <line x1="28" y1="126" x2="588" y2="126" stroke="#3d1f00" stroke-width="0.8">
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.13;0.15;1" dur="6s" fill="freeze"/>
+    </line>
 
-  <!-- Java bar -->
-  <text x="24" y="332" font-family="'Courier New', monospace" font-size="12" fill="#f0d49a">
-    Java    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.56;0.59;1" dur="6s" fill="freeze"/>
-  </text>
-  <rect x="100" y="320" width="0" height="12" rx="2" fill="#c47a1e">
-    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.56;0.59;1" dur="6s" fill="freeze"/>
-    <animate attributeName="width" values="0;75" begin="4.8s" dur="0.6s" fill="freeze"/>
-  </rect>
-  <text x="183" y="332" font-family="'Courier New', monospace" font-size="11" fill="#7a5c2e">
-    Intermediate<animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.59;0.62;1" dur="6s" fill="freeze"/>
-  </text>
+    <!-- cat interests -->
+    <text font-family="'Courier New', monospace" font-size="13" fill="#f5c87a">
+      <tspan x="28" y="146"><tspan fill="#c47a1e">❯ </tspan>cat interests.txt
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.15;0.18;1" dur="6s" fill="freeze"/>
+      </tspan>
+    </text>
+    <text font-family="'Courier New', monospace" font-size="12.5" fill="#d4a855">
+      <tspan x="28" y="166"><tspan fill="#c47a1e">◈ </tspan>Computer Vision &amp; Edge AI<animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.19;0.22;1" dur="6s" fill="freeze"/></tspan>
+    </text>
+    <text font-family="'Courier New', monospace" font-size="12.5" fill="#d4a855">
+      <tspan x="28" y="184"><tspan fill="#c47a1e">◈ </tspan>IoT Systems &amp; Embedded Hardware<animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.23;0.26;1" dur="6s" fill="freeze"/></tspan>
+    </text>
+    <text font-family="'Courier New', monospace" font-size="12.5" fill="#d4a855">
+      <tspan x="28" y="202"><tspan fill="#c47a1e">◈ </tspan>Cloud-Native ML Pipelines<animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.27;0.30;1" dur="6s" fill="freeze"/></tspan>
+    </text>
+    <text font-family="'Courier New', monospace" font-size="12.5" fill="#d4a855">
+      <tspan x="28" y="220"><tspan fill="#c47a1e">◈ </tspan>NLP &amp; Intelligent Agents<animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.31;0.34;1" dur="6s" fill="freeze"/></tspan>
+    </text>
 
-  <!-- Divider -->
-  <line x1="24" y1="346" x2="576" y2="346" stroke="#3d1f00" stroke-width="0.8">
-    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.62;0.64;1" dur="6s" fill="freeze"/>
-  </line>
+    <line x1="28" y1="232" x2="588" y2="232" stroke="#3d1f00" stroke-width="0.8">
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.34;0.36;1" dur="6s" fill="freeze"/>
+    </line>
 
-  <!-- Status line -->
-  <text font-family="'Courier New', monospace" font-size="13" fill="#f5c87a">
-    <tspan x="24" y="366">
-      <tspan fill="#c47a1e">❯ </tspan>status
-      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.64;0.67;1" dur="6s" fill="freeze"/>
-    </tspan>
-  </text>
-  <text font-family="'Courier New', monospace" font-size="12.5" fill="#f0d49a">
-    <tspan x="24" y="386">
-      <tspan fill="#f5c87a">✦ </tspan>Open to internship opportunities
-      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.68;0.71;1" dur="6s" fill="freeze"/>
-    </tspan>
-  </text>
+    <!-- skills -->
+    <text font-family="'Courier New', monospace" font-size="13" fill="#f5c87a">
+      <tspan x="28" y="252"><tspan fill="#c47a1e">❯ </tspan>skills --languages
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.36;0.39;1" dur="6s" fill="freeze"/>
+      </tspan>
+    </text>
 
-  <!-- Blinking cursor -->
-  <rect x="24" y="398" width="9" height="14" rx="1" fill="#c47a1e">
-    <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.4;0.5;0.9;1" dur="1.2s" repeatCount="indefinite" begin="5s"/>
-    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.70;0.73;1" dur="6s" fill="freeze"/>
-  </rect>
+    <!-- Python -->
+    <text x="28" y="274" font-family="'Courier New', monospace" font-size="12" fill="#f0d49a">Python <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.39;0.42;1" dur="6s" fill="freeze"/></text>
+    <rect x="104" y="262" width="0" height="12" rx="2" fill="url(#topgrad)" filter="url(#glow)">
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.39;0.42;1" dur="6s" fill="freeze"/>
+      <animate attributeName="width" values="0;170" begin="3.6s" dur="0.7s" fill="freeze"/>
+    </rect>
+    <text x="282" y="274" font-family="'Courier New', monospace" font-size="11" fill="#7a5c2e">Expert<animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.42;0.45;1" dur="6s" fill="freeze"/></text>
 
+    <!-- C -->
+    <text x="28" y="294" font-family="'Courier New', monospace" font-size="12" fill="#f0d49a">C    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.45;0.48;1" dur="6s" fill="freeze"/></text>
+    <rect x="104" y="282" width="0" height="12" rx="2" fill="url(#topgrad)" filter="url(#glow)">
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.45;0.48;1" dur="6s" fill="freeze"/>
+      <animate attributeName="width" values="0;130" begin="4s" dur="0.7s" fill="freeze"/>
+    </rect>
+    <text x="242" y="294" font-family="'Courier New', monospace" font-size="11" fill="#7a5c2e">Proficient<animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.48;0.51;1" dur="6s" fill="freeze"/></text>
+
+    <!-- SQL -->
+    <text x="28" y="314" font-family="'Courier New', monospace" font-size="12" fill="#f0d49a">SQL    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.51;0.54;1" dur="6s" fill="freeze"/></text>
+    <rect x="104" y="302" width="0" height="12" rx="2" fill="url(#topgrad)" filter="url(#glow)">
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.51;0.54;1" dur="6s" fill="freeze"/>
+      <animate attributeName="width" values="0;108" begin="4.4s" dur="0.7s" fill="freeze"/>
+    </rect>
+    <text x="220" y="314" font-family="'Courier New', monospace" font-size="11" fill="#7a5c2e">Proficient<animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.54;0.57;1" dur="6s" fill="freeze"/></text>
+
+    <!-- Java -->
+    <text x="28" y="334" font-family="'Courier New', monospace" font-size="12" fill="#f0d49a">Java   <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.57;0.60;1" dur="6s" fill="freeze"/></text>
+    <rect x="104" y="322" width="0" height="12" rx="2" fill="url(#topgrad)" filter="url(#glow)">
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.57;0.60;1" dur="6s" fill="freeze"/>
+      <animate attributeName="width" values="0;80" begin="4.8s" dur="0.7s" fill="freeze"/>
+    </rect>
+    <text x="192" y="334" font-family="'Courier New', monospace" font-size="11" fill="#7a5c2e">Intermediate<animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.60;0.63;1" dur="6s" fill="freeze"/></text>
+
+    <line x1="28" y1="348" x2="588" y2="348" stroke="#3d1f00" stroke-width="0.8">
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.63;0.65;1" dur="6s" fill="freeze"/>
+    </line>
+
+    <!-- status -->
+    <text font-family="'Courier New', monospace" font-size="13" fill="#f5c87a">
+      <tspan x="28" y="368"><tspan fill="#c47a1e">❯ </tspan>status
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.65;0.68;1" dur="6s" fill="freeze"/>
+      </tspan>
+    </text>
+    <text font-family="'Courier New', monospace" font-size="12.5" fill="#f0d49a">
+      <tspan x="28" y="388"><tspan fill="#f5c87a" filter="url(#glow)">✦ </tspan>Open to internship opportunities
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.69;0.72;1" dur="6s" fill="freeze"/>
+      </tspan>
+    </text>
+
+    <!-- Blinking cursor -->
+    <rect x="28" y="400" width="9" height="14" rx="1" fill="#c47a1e" filter="url(#glow)">
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.71;0.74;1" dur="6s" fill="freeze"/>
+      <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite" begin="5s"/>
+    </rect>
+  </g>
 </svg>
