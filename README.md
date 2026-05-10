@@ -29,17 +29,16 @@
 <div align="center">
 
 ![Python](https://img.shields.io/badge/Python-0d0d0d?style=for-the-badge&logo=python&logoColor=f5c87a)
-![C++](https://img.shields.io/badge/C++-0d0d0d?style=for-the-badge&logo=cplusplus&logoColor=c47a1e)
+![C](https://img.shields.io/badge/C++-0d0d0d?style=for-the-badge&logo=cplusplus&logoColor=c47a1e)
 ![OpenCV](https://img.shields.io/badge/OpenCV-0d0d0d?style=for-the-badge&logo=opencv&logoColor=f5c87a)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-0d0d0d?style=for-the-badge&logo=tensorflow&logoColor=c47a1e)
 ![Streamlit](https://img.shields.io/badge/Streamlit-0d0d0d?style=for-the-badge&logo=streamlit&logoColor=f5c87a)
 ![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-0d0d0d?style=for-the-badge&logo=raspberrypi&logoColor=c47a1e)
-![Flask](https://img.shields.io/badge/Flask-0d0d0d?style=for-the-badge&logo=flask&logoColor=f5c87a)
 ![Firebase](https://img.shields.io/badge/Firebase-0d0d0d?style=for-the-badge&logo=firebase&logoColor=c47a1e)
 ![Google Cloud](https://img.shields.io/badge/Google%20Cloud-0d0d0d?style=for-the-badge&logo=googlecloud&logoColor=f5c87a)
 ![MySQL](https://img.shields.io/badge/MySQL-0d0d0d?style=for-the-badge&logo=mysql&logoColor=c47a1e)
 ![Git](https://img.shields.io/badge/Git-0d0d0d?style=for-the-badge&logo=git&logoColor=f5c87a)
-![Linux](https://img.shields.io/badge/Linux-0d0d0d?style=for-the-badge&logo=linux&logoColor=c47a1e)
+
 
 </div>
 
