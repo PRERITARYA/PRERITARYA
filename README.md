@@ -29,7 +29,7 @@
 <div align="center">
 
 ![Python](https://img.shields.io/badge/Python-0d0d0d?style=for-the-badge&logo=python&logoColor=f5c87a)
-![C](https://img.shields.io/badge/C++-0d0d0d?style=for-the-badge&logo=cplusplus&logoColor=c47a1e)
+![C](https://img.shields.io/badge/C-0d0d0d?style=for-the-badge&logo=cplusplus&logoColor=c47a1e)
 ![OpenCV](https://img.shields.io/badge/OpenCV-0d0d0d?style=for-the-badge&logo=opencv&logoColor=f5c87a)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-0d0d0d?style=for-the-badge&logo=tensorflow&logoColor=c47a1e)
 ![Streamlit](https://img.shields.io/badge/Streamlit-0d0d0d?style=for-the-badge&logo=streamlit&logoColor=f5c87a)
