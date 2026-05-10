@@ -1,0 +1,97 @@
+<svg width="800" height="160" viewBox="0 0 800 160" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Prerit Arya Experience</title>
+  <desc>Experience section with floating card dark gold theme</desc>
+
+  <defs>
+    <linearGradient id="topgrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c47a1e"/>
+      <stop offset="100%" stop-color="#f5c87a"/>
+    </linearGradient>
+    <linearGradient id="bggrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1c0e00"/>
+      <stop offset="100%" stop-color="#0d0800"/>
+    </linearGradient>
+    <linearGradient id="glowgrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c47a1e" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#c47a1e" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Outer glow layer -->
+  <rect x="10" y="10" width="780" height="140" rx="14" fill="#c47a1e" opacity="0.07" filter="url(#softglow)"/>
+
+  <!-- Main card -->
+  <rect x="10" y="10" width="780" height="140" rx="14" fill="url(#bggrad)" stroke="#5c3a0a" stroke-width="1"/>
+
+  <!-- Top gradient accent bar -->
+  <rect x="10" y="10" width="780" height="5" rx="3" fill="url(#topgrad)" filter="url(#glow)"/>
+
+  <!-- Inner glow top -->
+  <rect x="10" y="10" width="780" height="60" rx="14" fill="url(#glowgrad)"/>
+
+  <!-- Left vertical accent line -->
+  <rect x="10" y="10" width="3" height="140" rx="2" fill="url(#topgrad)" filter="url(#glow)"/>
+
+  <!-- Company logo placeholder circle -->
+  <circle cx="56" cy="72" r="22" fill="#120800" stroke="#5c3a0a" stroke-width="1"/>
+  <text x="56" y="79" text-anchor="middle" font-size="20" font-family="serif">💼</text>
+
+  <!-- Role title -->
+  <text x="92" y="58" font-family="Georgia, serif" font-size="15" fill="#f5c87a" font-weight="bold" filter="url(#glow)">
+    Software Engineering Intern
+  </text>
+
+  <!-- Company + location -->
+  <text x="92" y="78" font-family="Georgia, serif" font-size="13" fill="#c47a1e">
+    Sopra Steria India
+    <tspan fill="#5c3a0a"> · </tspan>
+    <tspan fill="#7a5c2e">Noida, India</tspan>
+    <tspan fill="#5c3a0a">  ·  </tspan>
+    <tspan fill="#7a5c2e">2024</tspan>
+  </text>
+
+  <!-- Thin divider -->
+  <line x1="92" y1="88" x2="770" y2="88" stroke="#3d1f00" stroke-width="0.8"/>
+
+  <!-- Description -->
+  <text x="92" y="106" font-family="Georgia, serif" font-size="12" fill="#d4a855">
+    Built a full-stack Smart News Summarizer integrating real-time APIs, NLP
+  </text>
+  <text x="92" y="122" font-family="Georgia, serif" font-size="12" fill="#d4a855">
+    summarization, sentiment analysis, multilingual support &amp; audio readout —
+  </text>
+  <text x="92" y="138" font-family="Georgia, serif" font-size="12" fill="#d4a855">
+    deployed as a production-grade
+    <tspan fill="#f5c87a" font-weight="bold"> Streamlit </tspan>
+    application.
+  </text>
+
+  <!-- Floating animation -->
+  <animateTransform
+    attributeName="transform"
+    attributeType="XML"
+    type="translate"
+    values="0,0; 0,-4; 0,0"
+    dur="4s"
+    repeatCount="indefinite"
+    calcMode="spline"
+    keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"/>
+
+  <!-- Fade in on load -->
+  <animate attributeName="opacity" values="0;1" dur="0.6s" fill="freeze"/>
+
+</svg>
